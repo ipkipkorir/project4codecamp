@@ -7,7 +7,7 @@
 	<link rel="stylesheet" type="text/css" href="./css/main.css">
 </head>
 <body>
-	<nav id="navbar">
+	<nav id="navbar" class="nav">
 		<header>
 			<h2>Contents</h2>
 		</header>
@@ -23,13 +23,11 @@
 		<a href="#recursion_and_algorithms" class="nav-link">Recursion and algorithms</a>
 		<a href="#object_oriented_programming" class="nav-link">Object Oriented Programming</a>
 		<a href="#database_connection" class="nav-link">Database connection</a>
+		<a href="javascript:void(0);" class="nav-link icon-menu" onclick="navBar()">menu &#9776;</a>
 	</nav>
 	<main id="main-doc">
+		<h1 page-title>Python Technical Documentation</h1>
 		<section class="main-section" id="introduction_to_python">
-			<h1>Python Technical Documentation</h1>
-			<p python-version>
-				Documentation for Python 3
-			</p>
 			<header>
 				<h2>Introduction to Python</h2>
 			</header>
@@ -557,7 +555,15 @@
 			</p>
 			<p class="code-area">
 				<code>
-				
+					let navBar = () => { <br>
+				&nbsp		let nav_element = document.getElementById("navbar");<br>
+
+				&nbsp		if(nav_element.className === "nav") {<br>
+				&nbsp&nbsp			nav_element.className += " responsive";<br>
+				&nbsp		} else {<br>
+				&nbsp&nbsp			nav_element.className = "nav";<br>
+				&nbsp		}<br>
+					} <br>
 				</code>
 			</p>
 			<p>
@@ -882,6 +888,16 @@
 			</p>
 		</section>
 	</main>
+<script>
+	let navBar = () => {
+		let nav_element = document.getElementById("navbar");
 
+		if(nav_element.className === "nav") {
+			nav_element.className += " responsive";
+		} else {
+			nav_element.className = "nav";
+		}
+	} 
+</script>
 </body>
 </html>
