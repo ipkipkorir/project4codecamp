@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 	<title>Python Documentation</title>
 	<meta charset="utf-8">
@@ -12,7 +12,7 @@
 			<h2>Contents</h2>
 		</header>
 		<a href="#introduction_to_python" class="nav-link">Introduction to Python</a>
-		<a href="#using_idle_to_develop_programs" class="nav-link">Using IDLE to develop programs</a>
+		<a href="#using_idle_to_develop_programs" class="nav-link">Using idle to develop programs</a>
 		<a href="#basic_coding" class="nav-link">Basic coding </a>
 		<a href="#control_statements" class="nav-link">Control Statements</a>
 		<a href="#functions_and_modules" class="nav-link">Functions and modules</a>
@@ -23,7 +23,7 @@
 		<a href="#recursion_and_algorithms" class="nav-link">Recursion and algorithms</a>
 		<a href="#object_oriented_programming" class="nav-link">Object Oriented Programming</a>
 		<a href="#database_connection" class="nav-link">Database connection</a>
-		<a href="javascript:void(0);" class="nav-link icon-menu" onclick="navBar()">menu &#9776;</a>
+		<a href="javascript:void(0);" class="nav-link-menu icon-menu" onclick="navBar()">menu &#9776;</a>
 	</nav>
 	<main id="main-doc">
 		<h1 page-title>Python Technical Documentation</h1>
@@ -63,7 +63,13 @@
 			</p>
 			<p class="code-area">
 				<code>
-				
+				  # This program adds two numbers<br>
+num1 = 1.5<br>
+num2 = 6.3<br>
+# Add two numbers<br>
+sum = float(num1) + float(num2)<br>
+# Display the sum<br>
+print('The sum of {0} and {1} is {2}'.format(num1, num2, sum))<br>
 				</code>
 			</p>
 			<p>
@@ -74,7 +80,13 @@
 			</p>
 			<p class="code-area">
 				<code>
-				
+				  # Store input numbers<br>
+num1 = input('Enter first number: ')<br>
+num2 = input('Enter second number: ')<br>
+# Add two numbers<br>
+sum = float(num1) + float(num2)<br>
+# Display the sum<br>
+print('The sum of {0} and {1} is {2}'.format(num1, num2, sum))<br>
 				</code>
 			</p>
 			<p>
@@ -85,7 +97,23 @@
 			</p>
 			<p class="code-area">
 				<code>
-				
+				  # Solve the quadratic equation ax**2 + bx + c = 0<br>
+<br>
+# import complex math module<br>
+import cmath<br>
+<br>
+a = 1<br>
+b = 5<br>
+c = 6<br>
+<br>
+# calculate the discriminant<br>
+d = (b**2) - (4*a*c)<br>
+<br>
+# find two solutions<br>
+sol1 = (-b-cmath.sqrt(d))/(2*a)<br>
+sol2 = (-b+cmath.sqrt(d))/(2*a)<br>
+<br>
+print('The solution are {0} and {1}'.format(sol1,sol2))<br>
 				</code>
 			</p>
 			<p>
@@ -93,7 +121,27 @@
 			</p>
 			<p class="code-area">
 				<code>
-				
+				  # Python program to check if <br>
+# given number is prime or not <br><br>
+
+num = 11<br><br>
+
+# If given number is greater than 1 <br>
+if num > 1: <br><br>
+	
+# Iterate from 2 to n / 2 <br>
+for i in range(2, num//2): <br><br>
+		
+	# If num is divisible by any number between <br>
+	# 2 and n / 2, it is not prime <br>
+	if (num % i) == 0: <br>
+		print(num, "is not a prime number") <br>
+		break<br>
+else: <br>
+	print(num, "is a prime number") <br><br>
+
+else: <br>
+print(num, "is not a prime number") <br><br>
 				</code>
 			</p>
 			<p>
@@ -102,7 +150,7 @@
 		</section>
 		<section class="main-section" id="using_idle_to_develop_programs">
 			<header>
-				<h2>Using IDLE to develop programs</2>
+				<h2>Using idle to develop programs</2>
 			</header>
 			<p>
 				Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
@@ -120,7 +168,23 @@
 			</p>
 			<p class="code-area">
 				<code>
-				
+				  # Solve the quadratic equation ax**2 + bx + c = 0<br>
+<br>
+# import complex math module<br>
+import cmath<br>
+<br>
+a = 1<br>
+b = 5<br>
+c = 6<br>
+<br>
+# calculate the discriminant<br>
+d = (b**2) - (4*a*c)<br>
+<br>
+# find two solutions<br>
+sol1 = (-b-cmath.sqrt(d))/(2*a)<br>
+sol2 = (-b+cmath.sqrt(d))/(2*a)<br>
+<br>
+print('The solution are {0} and {1}'.format(sol1,sol2))<br>
 				</code>
 			</p>
 			<p>
@@ -131,7 +195,23 @@
 			</p>
 			<p class="code-area">
 				<code>
-				
+				  # Solve the quadratic equation ax**2 + bx + c = 0<br>
+<br>
+# import complex math module<br>
+import cmath<br>
+<br>
+a = 1<br>
+b = 5<br>
+c = 6<br>
+<br>
+# calculate the discriminant<br>
+d = (b**2) - (4*a*c)<br>
+<br>
+# find two solutions<br>
+sol1 = (-b-cmath.sqrt(d))/(2*a)<br>
+sol2 = (-b+cmath.sqrt(d))/(2*a)<br>
+<br>
+print('The solution are {0} and {1}'.format(sol1,sol2))<br>
 				</code>
 			</p>
 			<p>
@@ -142,7 +222,27 @@
 			</p>
 			<p class="code-area">
 				<code>
-				
+				  # Python program to check if <br>
+# given number is prime or not <br><br>
+
+num = 11<br><br>
+
+# If given number is greater than 1 <br>
+if num > 1: <br><br>
+	
+# Iterate from 2 to n / 2 <br>
+for i in range(2, num//2): <br><br>
+		
+	# If num is divisible by any number between <br>
+	# 2 and n / 2, it is not prime <br>
+	if (num % i) == 0: <br>
+		print(num, "is not a prime number") <br>
+		break<br>
+else: <br>
+	print(num, "is a prime number") <br><br>
+
+else: <br>
+print(num, "is not a prime number") <br><br>
 				</code>
 			</p>
 			<p>
@@ -153,7 +253,11 @@
 			</p>
 			<p class="code-area">
 				<code>
-				
+				  import time<br>
+# seconds passed since epoch<br>
+seconds = 1545925769.9618232<br>
+local_time = time.ctime(seconds)<br>
+print("Local time:", local_time)<br>
 				</code>
 			</p>
 			<p>
@@ -205,7 +309,27 @@
 			</p>
 			<p class="code-area">
 				<code>
-				
+				  # Python program to check if <br>
+# given number is prime or not <br><br>
+
+num = 11<br><br>
+
+# If given number is greater than 1 <br>
+if num > 1: <br><br>
+	
+# Iterate from 2 to n / 2 <br>
+for i in range(2, num//2): <br><br>
+		
+	# If num is divisible by any number between <br>
+	# 2 and n / 2, it is not prime <br>
+	if (num % i) == 0: <br>
+		print(num, "is not a prime number") <br>
+		break<br>
+else: <br>
+	print(num, "is a prime number") <br><br>
+
+else: <br>
+print(num, "is not a prime number") <br><br>
 				</code>
 			</p>
 			<p>
@@ -216,7 +340,10 @@
 			</p>
 			<p class="code-area">
 				<code>
-				
+				  import time<br><br>
+named_tuple = time.localtime() # get struct_time<br><br>
+time_string = time.strftime("%m/%d/%Y, %H:%M:%S", named_tuple)<br>
+print(time_string)<br>
 				</code>
 			</p>
 			<p>
@@ -227,7 +354,10 @@
 			</p>
 			<p class="code-area">
 				<code>
-				
+				  				  import time<br><br>
+named_tuple = time.localtime() # get struct_time<br><br>
+time_string = time.strftime("%m/%d/%Y, %H:%M:%S", named_tuple)<br>
+print(time_string)<br>
 				</code>
 			</p>
 			<p>
@@ -235,7 +365,9 @@
 			</p>
 			<p class="code-area">
 				<code>
-				
+				  import datetime<br><br>
+datetime_object = datetime.datetime.now()<br>
+print(datetime_object)<br><br>
 				</code>
 			</p>
 			<p>
@@ -263,7 +395,9 @@
 			</p>
 			<p class="code-area">
 				<code>
-				
+				  import datetime<br><br>
+datetime_object = datetime.datetime.now()<br>
+print(datetime_object)<br><br>
 				</code>
 			</p>
 			<p>
@@ -274,7 +408,9 @@
 			</p>
 			<p class="code-area">
 				<code>
-				
+				  import datetime<br><br>
+datetime_object = datetime.datetime.now()<br>
+print(datetime_object)<br><br>
 				</code>
 			</p>
 			<p>
@@ -285,7 +421,9 @@
 			</p>
 			<p class="code-area">
 				<code>
-				
+				  import datetime<br><br>
+datetime_object = datetime.datetime.now()<br>
+print(datetime_object)<br><br>
 				</code>
 			</p>
 			<p>
@@ -296,7 +434,9 @@
 			</p>
 			<p class="code-area">
 				<code>
-				
+				  import datetime<br><br>
+datetime_object = datetime.datetime.now()<br>
+print(datetime_object)<br><br>
 				</code>
 			</p>
 			<p>
@@ -304,7 +444,27 @@
 			</p>
 			<p class="code-area">
 				<code>
-				
+					# Python program to check if <br>
+# given number is prime or not <br><br>
+
+num = 11<br><br>
+
+# If given number is greater than 1 <br>
+if num > 1: <br><br>
+	
+# Iterate from 2 to n / 2 <br>
+for i in range(2, num//2): <br><br>
+		
+	# If num is divisible by any number between <br>
+	# 2 and n / 2, it is not prime <br>
+	if (num % i) == 0: <br>
+		print(num, "is not a prime number") <br>
+		break<br>
+else: <br>
+	print(num, "is a prime number") <br><br>
+
+else: <br>
+print(num, "is not a prime number") <br><br>
 				</code>
 			</p>
 			<p>
@@ -329,7 +489,9 @@
 			</p>
 			<p class="code-area">
 				<code>
-				
+				  import datetime<br><br>
+datetime_object = datetime.datetime.now()<br>
+print(datetime_object)<br><br>
 				</code>
 			</p>
 			<p>
@@ -340,7 +502,9 @@
 			</p>
 			<p class="code-area">
 				<code>
-				
+				  import datetime<br><br>
+datetime_object = datetime.datetime.now()<br>
+print(datetime_object)<br><br>
 				</code>
 			</p>
 			<p>
@@ -351,7 +515,9 @@
 			</p>
 			<p class="code-area">
 				<code>
-				
+				  import datetime<br><br>
+datetime_object = datetime.datetime.now()<br>
+print(datetime_object)<br><br>
 				</code>
 			</p>
 			<p>
@@ -362,7 +528,9 @@
 			</p>
 			<p class="code-area">
 				<code>
-				
+				  import datetime<br><br>
+datetime_object = datetime.datetime.now()<br>
+print(datetime_object)<br><br>
 				</code>
 			</p>
 			<p>
@@ -370,7 +538,27 @@
 			</p>
 			<p class="code-area">
 				<code>
-				
+				  # Python program to check if <br>
+# given number is prime or not <br><br>
+
+num = 11<br><br>
+
+# If given number is greater than 1 <br>
+if num > 1: <br><br>
+	
+# Iterate from 2 to n / 2 <br>
+for i in range(2, num//2): <br><br>
+		
+	# If num is divisible by any number between <br>
+	# 2 and n / 2, it is not prime <br>
+	if (num % i) == 0: <br>
+		print(num, "is not a prime number") <br>
+		break<br>
+else: <br>
+	print(num, "is a prime number") <br><br>
+
+else: <br>
+print(num, "is not a prime number") <br><br>
 				</code>
 			</p>
 			<p>
@@ -397,7 +585,27 @@
 			</p>
 			<p class="code-area">
 				<code>
-				
+				  # Python program to check if <br>
+# given number is prime or not <br><br>
+
+num = 11<br><br>
+
+# If given number is greater than 1 <br>
+if num > 1: <br><br>
+	
+# Iterate from 2 to n / 2 <br>
+for i in range(2, num//2): <br><br>
+		
+	# If num is divisible by any number between <br>
+	# 2 and n / 2, it is not prime <br>
+	if (num % i) == 0: <br>
+		print(num, "is not a prime number") <br>
+		break<br>
+else: <br>
+	print(num, "is a prime number") <br><br>
+
+else: <br>
+print(num, "is not a prime number") <br><br>
 				</code>
 			</p>
 			<p>
@@ -408,7 +616,27 @@
 			</p>
 			<p class="code-area">
 				<code>
-				
+				  # Python program to check if <br>
+# given number is prime or not <br><br>
+
+num = 11<br><br>
+
+# If given number is greater than 1 <br>
+if num > 1: <br><br>
+	
+# Iterate from 2 to n / 2 <br>
+for i in range(2, num//2): <br><br>
+		
+	# If num is divisible by any number between <br>
+	# 2 and n / 2, it is not prime <br>
+	if (num % i) == 0: <br>
+		print(num, "is not a prime number") <br>
+		break<br>
+else: <br>
+	print(num, "is a prime number") <br><br>
+
+else: <br>
+print(num, "is not a prime number") <br><br>
 				</code>
 			</p>
 			<p>
@@ -419,7 +647,27 @@
 			</p>
 			<p class="code-area">
 				<code>
-				
+				  # Python program to check if <br>
+# given number is prime or not <br><br>
+
+num = 11<br><br>
+
+# If given number is greater than 1 <br>
+if num > 1: <br><br>
+	
+# Iterate from 2 to n / 2 <br>
+for i in range(2, num//2): <br><br>
+		
+	# If num is divisible by any number between <br>
+	# 2 and n / 2, it is not prime <br>
+	if (num % i) == 0: <br>
+		print(num, "is not a prime number") <br>
+		break<br>
+else: <br>
+	print(num, "is a prime number") <br><br>
+
+else: <br>
+print(num, "is not a prime number") <br><br>
 				</code>
 			</p>
 			<p>
@@ -430,7 +678,27 @@
 			</p>
 			<p class="code-area">
 				<code>
-				
+				  # Python program to check if <br>
+# given number is prime or not <br><br>
+
+num = 11<br><br>
+
+# If given number is greater than 1 <br>
+if num > 1: <br><br>
+	
+# Iterate from 2 to n / 2 <br>
+for i in range(2, num//2): <br><br>
+		
+	# If num is divisible by any number between <br>
+	# 2 and n / 2, it is not prime <br>
+	if (num % i) == 0: <br>
+		print(num, "is not a prime number") <br>
+		break<br>
+else: <br>
+	print(num, "is a prime number") <br><br>
+
+else: <br>
+print(num, "is not a prime number") <br><br>
 				</code>
 			</p>
 			<p>
@@ -438,7 +706,27 @@
 			</p>
 			<p class="code-area">
 				<code>
-				
+				  # Python program to check if <br>
+# given number is prime or not <br><br>
+
+num = 11<br><br>
+
+# If given number is greater than 1 <br>
+if num > 1: <br><br>
+	
+# Iterate from 2 to n / 2 <br>
+for i in range(2, num//2): <br><br>
+		
+	# If num is divisible by any number between <br>
+	# 2 and n / 2, it is not prime <br>
+	if (num % i) == 0: <br>
+		print(num, "is not a prime number") <br>
+		break<br>
+else: <br>
+	print(num, "is a prime number") <br><br>
+
+else: <br>
+print(num, "is not a prime number") <br><br>
 				</code>
 			</p>
 			<p>
@@ -465,7 +753,27 @@
 			</p>
 			<p class="code-area">
 				<code>
-				
+				  # Python program to check if <br>
+# given number is prime or not <br><br>
+
+num = 11<br><br>
+
+# If given number is greater than 1 <br>
+if num > 1: <br><br>
+	
+# Iterate from 2 to n / 2 <br>
+for i in range(2, num//2): <br><br>
+		
+	# If num is divisible by any number between <br>
+	# 2 and n / 2, it is not prime <br>
+	if (num % i) == 0: <br>
+		print(num, "is not a prime number") <br>
+		break<br>
+else: <br>
+	print(num, "is a prime number") <br><br>
+
+else: <br>
+print(num, "is not a prime number") <br><br>
 				</code>
 			</p>
 			<p>
@@ -476,7 +784,27 @@
 			</p>
 			<p class="code-area">
 				<code>
-				
+				  # Python program to check if <br>
+# given number is prime or not <br><br>
+
+num = 11<br><br>
+
+# If given number is greater than 1 <br>
+if num > 1: <br><br>
+	
+# Iterate from 2 to n / 2 <br>
+for i in range(2, num//2): <br><br>
+		
+	# If num is divisible by any number between <br>
+	# 2 and n / 2, it is not prime <br>
+	if (num % i) == 0: <br>
+		print(num, "is not a prime number") <br>
+		break<br>
+else: <br>
+	print(num, "is a prime number") <br><br>
+
+else: <br>
+print(num, "is not a prime number") <br><br>
 				</code>
 			</p>
 			<p>
@@ -487,7 +815,27 @@
 			</p>
 			<p class="code-area">
 				<code>
-				
+				  # Python program to check if <br>
+# given number is prime or not <br><br>
+
+num = 11<br><br>
+
+# If given number is greater than 1 <br>
+if num > 1: <br><br>
+	
+# Iterate from 2 to n / 2 <br>
+for i in range(2, num//2): <br><br>
+		
+	# If num is divisible by any number between <br>
+	# 2 and n / 2, it is not prime <br>
+	if (num % i) == 0: <br>
+		print(num, "is not a prime number") <br>
+		break<br>
+else: <br>
+	print(num, "is a prime number") <br><br>
+
+else: <br>
+print(num, "is not a prime number") <br><br>
 				</code>
 			</p>
 			<p>
@@ -498,7 +846,27 @@
 			</p>
 			<p class="code-area">
 				<code>
-				
+				  # Python program to check if <br>
+# given number is prime or not <br><br>
+
+num = 11<br><br>
+
+# If given number is greater than 1 <br>
+if num > 1: <br><br>
+	
+# Iterate from 2 to n / 2 <br>
+for i in range(2, num//2): <br><br>
+		
+	# If num is divisible by any number between <br>
+	# 2 and n / 2, it is not prime <br>
+	if (num % i) == 0: <br>
+		print(num, "is not a prime number") <br>
+		break<br>
+else: <br>
+	print(num, "is a prime number") <br><br>
+
+else: <br>
+print(num, "is not a prime number") <br><br>
 				</code>
 			</p>
 			<p>
@@ -506,7 +874,27 @@
 			</p>
 			<p class="code-area">
 				<code>
-				
+				  # Python program to check if <br>
+# given number is prime or not <br><br>
+
+num = 11<br><br>
+
+# If given number is greater than 1 <br>
+if num > 1: <br><br>
+	
+# Iterate from 2 to n / 2 <br>
+for i in range(2, num//2): <br><br>
+		
+	# If num is divisible by any number between <br>
+	# 2 and n / 2, it is not prime <br>
+	if (num % i) == 0: <br>
+		print(num, "is not a prime number") <br>
+		break<br>
+else: <br>
+	print(num, "is a prime number") <br><br>
+
+else: <br>
+print(num, "is not a prime number") <br><br>
 				</code>
 			</p>
 			<p>
@@ -533,7 +921,27 @@
 			</p>
 			<p class="code-area">
 				<code>
-				
+				  # Python program to check if <br>
+# given number is prime or not <br><br>
+
+num = 11<br><br>
+
+# If given number is greater than 1 <br>
+if num > 1: <br><br>
+	
+# Iterate from 2 to n / 2 <br>
+for i in range(2, num//2): <br><br>
+		
+	# If num is divisible by any number between <br>
+	# 2 and n / 2, it is not prime <br>
+	if (num % i) == 0: <br>
+		print(num, "is not a prime number") <br>
+		break<br>
+else: <br>
+	print(num, "is a prime number") <br><br>
+
+else: <br>
+print(num, "is not a prime number") <br><br>
 				</code>
 			</p>
 			<p>
@@ -544,7 +952,27 @@
 			</p>
 			<p class="code-area">
 				<code>
-				
+				  # Python program to check if <br>
+# given number is prime or not <br><br>
+
+num = 11<br><br>
+
+# If given number is greater than 1 <br>
+if num > 1: <br><br>
+	
+# Iterate from 2 to n / 2 <br>
+for i in range(2, num//2): <br><br>
+		
+	# If num is divisible by any number between <br>
+	# 2 and n / 2, it is not prime <br>
+	if (num % i) == 0: <br>
+		print(num, "is not a prime number") <br>
+		break<br>
+else: <br>
+	print(num, "is a prime number") <br><br>
+
+else: <br>
+print(num, "is not a prime number") <br><br>
 				</code>
 			</p>
 			<p>
@@ -574,7 +1002,27 @@
 			</p>
 			<p class="code-area">
 				<code>
-				
+				  # Python program to check if <br>
+# given number is prime or not <br><br>
+
+num = 11<br><br>
+
+# If given number is greater than 1 <br>
+if num > 1: <br><br>
+	
+# Iterate from 2 to n / 2 <br>
+for i in range(2, num//2): <br><br>
+		
+	# If num is divisible by any number between <br>
+	# 2 and n / 2, it is not prime <br>
+	if (num % i) == 0: <br>
+		print(num, "is not a prime number") <br>
+		break<br>
+else: <br>
+	print(num, "is a prime number") <br><br>
+
+else: <br>
+print(num, "is not a prime number") <br><br>
 				</code>
 			</p>
 			<p>
@@ -582,7 +1030,27 @@
 			</p>
 			<p class="code-area">
 				<code>
-				
+				  # Python program to check if <br>
+# given number is prime or not <br><br>
+
+num = 11<br><br>
+
+# If given number is greater than 1 <br>
+if num > 1: <br><br>
+	
+# Iterate from 2 to n / 2 <br>
+for i in range(2, num//2): <br><br>
+		
+	# If num is divisible by any number between <br>
+	# 2 and n / 2, it is not prime <br>
+	if (num % i) == 0: <br>
+		print(num, "is not a prime number") <br>
+		break<br>
+else: <br>
+	print(num, "is a prime number") <br><br>
+
+else: <br>
+print(num, "is not a prime number") <br><br>
 				</code>
 			</p>
 			<p>
@@ -610,7 +1078,27 @@
 			</p>
 			<p class="code-area">
 				<code>
-				
+				  # Python program to check if <br>
+# given number is prime or not <br><br>
+
+num = 11<br><br>
+
+# If given number is greater than 1 <br>
+if num > 1: <br><br>
+	
+# Iterate from 2 to n / 2 <br>
+for i in range(2, num//2): <br><br>
+		
+	# If num is divisible by any number between <br>
+	# 2 and n / 2, it is not prime <br>
+	if (num % i) == 0: <br>
+		print(num, "is not a prime number") <br>
+		break<br>
+else: <br>
+	print(num, "is a prime number") <br><br>
+
+else: <br>
+print(num, "is not a prime number") <br><br>
 				</code>
 			</p>
 			<p>
@@ -621,7 +1109,27 @@
 			</p>
 			<p class="code-area">
 				<code>
-				
+				  # Python program to check if <br>
+# given number is prime or not <br><br>
+
+num = 11<br><br>
+
+# If given number is greater than 1 <br>
+if num > 1: <br><br>
+	
+# Iterate from 2 to n / 2 <br>
+for i in range(2, num//2): <br><br>
+		
+	# If num is divisible by any number between <br>
+	# 2 and n / 2, it is not prime <br>
+	if (num % i) == 0: <br>
+		print(num, "is not a prime number") <br>
+		break<br>
+else: <br>
+	print(num, "is a prime number") <br><br>
+
+else: <br>
+print(num, "is not a prime number") <br><br>
 				</code>
 			</p>
 			<p>
@@ -632,7 +1140,27 @@
 			</p>
 			<p class="code-area">
 				<code>
-				
+				  # Python program to check if <br>
+# given number is prime or not <br><br>
+
+num = 11<br><br>
+
+# If given number is greater than 1 <br>
+if num > 1: <br><br>
+	
+# Iterate from 2 to n / 2 <br>
+for i in range(2, num//2): <br><br>
+		
+	# If num is divisible by any number between <br>
+	# 2 and n / 2, it is not prime <br>
+	if (num % i) == 0: <br>
+		print(num, "is not a prime number") <br>
+		break<br>
+else: <br>
+	print(num, "is a prime number") <br><br>
+
+else: <br>
+print(num, "is not a prime number") <br><br>
 				</code>
 			</p>
 			<p>
@@ -643,7 +1171,27 @@
 			</p>
 			<p class="code-area">
 				<code>
-				
+				  # Python program to check if <br>
+# given number is prime or not <br><br>
+
+num = 11<br><br>
+
+# If given number is greater than 1 <br>
+if num > 1: <br><br>
+	
+# Iterate from 2 to n / 2 <br>
+for i in range(2, num//2): <br><br>
+		
+	# If num is divisible by any number between <br>
+	# 2 and n / 2, it is not prime <br>
+	if (num % i) == 0: <br>
+		print(num, "is not a prime number") <br>
+		break<br>
+else: <br>
+	print(num, "is a prime number") <br><br>
+
+else: <br>
+print(num, "is not a prime number") <br><br>
 				</code>
 			</p>
 			<p>
@@ -651,7 +1199,27 @@
 			</p>
 			<p class="code-area">
 				<code>
-				
+				  # Python program to check if <br>
+# given number is prime or not <br><br>
+
+num = 11<br><br>
+
+# If given number is greater than 1 <br>
+if num > 1: <br><br>
+	
+# Iterate from 2 to n / 2 <br>
+for i in range(2, num//2): <br><br>
+		
+	# If num is divisible by any number between <br>
+	# 2 and n / 2, it is not prime <br>
+	if (num % i) == 0: <br>
+		print(num, "is not a prime number") <br>
+		break<br>
+else: <br>
+	print(num, "is a prime number") <br><br>
+
+else: <br>
+print(num, "is not a prime number") <br><br>
 				</code>
 			</p>
 			<p>
@@ -678,7 +1246,27 @@
 			</p>
 			<p class="code-area">
 				<code>
-				
+				  # Python program to check if <br>
+# given number is prime or not <br><br>
+
+num = 11<br><br>
+
+# If given number is greater than 1 <br>
+if num > 1: <br><br>
+	
+# Iterate from 2 to n / 2 <br>
+for i in range(2, num//2): <br><br>
+		
+	# If num is divisible by any number between <br>
+	# 2 and n / 2, it is not prime <br>
+	if (num % i) == 0: <br>
+		print(num, "is not a prime number") <br>
+		break<br>
+else: <br>
+	print(num, "is a prime number") <br><br>
+
+else: <br>
+print(num, "is not a prime number") <br><br>
 				</code>
 			</p>
 			<p>
@@ -689,7 +1277,27 @@
 			</p>
 			<p class="code-area">
 				<code>
-				
+				  # Python program to check if <br>
+# given number is prime or not <br><br>
+
+num = 11<br><br>
+
+# If given number is greater than 1 <br>
+if num > 1: <br><br>
+	
+# Iterate from 2 to n / 2 <br>
+for i in range(2, num//2): <br><br>
+		
+	# If num is divisible by any number between <br>
+	# 2 and n / 2, it is not prime <br>
+	if (num % i) == 0: <br>
+		print(num, "is not a prime number") <br>
+		break<br>
+else: <br>
+	print(num, "is a prime number") <br><br>
+
+else: <br>
+print(num, "is not a prime number") <br><br>
 				</code>
 			</p>
 			<p>
@@ -700,7 +1308,27 @@
 			</p>
 			<p class="code-area">
 				<code>
-				
+				  # Python program to check if <br>
+# given number is prime or not <br><br>
+
+num = 11<br><br>
+
+# If given number is greater than 1 <br>
+if num > 1: <br><br>
+	
+# Iterate from 2 to n / 2 <br>
+for i in range(2, num//2): <br><br>
+		
+	# If num is divisible by any number between <br>
+	# 2 and n / 2, it is not prime <br>
+	if (num % i) == 0: <br>
+		print(num, "is not a prime number") <br>
+		break<br>
+else: <br>
+	print(num, "is a prime number") <br><br>
+
+else: <br>
+print(num, "is not a prime number") <br><br>
 				</code>
 			</p>
 			<p>
@@ -711,7 +1339,27 @@
 			</p>
 			<p class="code-area">
 				<code>
-				
+				  # Python program to check if <br>
+# given number is prime or not <br><br>
+
+num = 11<br><br>
+
+# If given number is greater than 1 <br>
+if num > 1: <br><br>
+	
+# Iterate from 2 to n / 2 <br>
+for i in range(2, num//2): <br><br>
+		
+	# If num is divisible by any number between <br>
+	# 2 and n / 2, it is not prime <br>
+	if (num % i) == 0: <br>
+		print(num, "is not a prime number") <br>
+		break<br>
+else: <br>
+	print(num, "is a prime number") <br><br>
+
+else: <br>
+print(num, "is not a prime number") <br><br>
 				</code>
 			</p>
 			<p>
@@ -719,7 +1367,27 @@
 			</p>
 			<p class="code-area">
 				<code>
-				
+				  # Python program to check if <br>
+# given number is prime or not <br><br>
+
+num = 11<br><br>
+
+# If given number is greater than 1 <br>
+if num > 1: <br><br>
+	
+# Iterate from 2 to n / 2 <br>
+for i in range(2, num//2): <br><br>
+		
+	# If num is divisible by any number between <br>
+	# 2 and n / 2, it is not prime <br>
+	if (num % i) == 0: <br>
+		print(num, "is not a prime number") <br>
+		break<br>
+else: <br>
+	print(num, "is a prime number") <br><br>
+
+else: <br>
+print(num, "is not a prime number") <br><br>
 				</code>
 			</p>
 			<p>
@@ -746,7 +1414,27 @@
 			</p>
 			<p class="code-area">
 				<code>
-				
+				  # Python program to check if <br>
+# given number is prime or not <br><br>
+
+num = 11<br><br>
+
+# If given number is greater than 1 <br>
+if num > 1: <br><br>
+	
+# Iterate from 2 to n / 2 <br>
+for i in range(2, num//2): <br><br>
+		
+	# If num is divisible by any number between <br>
+	# 2 and n / 2, it is not prime <br>
+	if (num % i) == 0: <br>
+		print(num, "is not a prime number") <br>
+		break<br>
+else: <br>
+	print(num, "is a prime number") <br><br>
+
+else: <br>
+print(num, "is not a prime number") <br><br>
 				</code>
 			</p>
 			<p>
@@ -757,7 +1445,27 @@
 			</p>
 			<p class="code-area">
 				<code>
-				
+				  # Python program to check if <br>
+# given number is prime or not <br><br>
+
+num = 11<br><br>
+
+# If given number is greater than 1 <br>
+if num > 1: <br><br>
+	
+# Iterate from 2 to n / 2 <br>
+for i in range(2, num//2): <br><br>
+		
+	# If num is divisible by any number between <br>
+	# 2 and n / 2, it is not prime <br>
+	if (num % i) == 0: <br>
+		print(num, "is not a prime number") <br>
+		break<br>
+else: <br>
+	print(num, "is a prime number") <br><br>
+
+else: <br>
+print(num, "is not a prime number") <br><br>
 				</code>
 			</p>
 			<p>
@@ -768,7 +1476,27 @@
 			</p>
 			<p class="code-area">
 				<code>
-				
+				  # Python program to check if <br>
+# given number is prime or not <br><br>
+
+num = 11<br><br>
+
+# If given number is greater than 1 <br>
+if num > 1: <br><br>
+	
+# Iterate from 2 to n / 2 <br>
+for i in range(2, num//2): <br><br>
+		
+	# If num is divisible by any number between <br>
+	# 2 and n / 2, it is not prime <br>
+	if (num % i) == 0: <br>
+		print(num, "is not a prime number") <br>
+		break<br>
+else: <br>
+	print(num, "is a prime number") <br><br>
+
+else: <br>
+print(num, "is not a prime number") <br><br>
 				</code>
 			</p>
 			<p>
@@ -779,7 +1507,27 @@
 			</p>
 			<p class="code-area">
 				<code>
-				
+				  # Python program to check if <br>
+# given number is prime or not <br><br>
+
+num = 11<br><br>
+
+# If given number is greater than 1 <br>
+if num > 1: <br><br>
+	
+# Iterate from 2 to n / 2 <br>
+for i in range(2, num//2): <br><br>
+		
+	# If num is divisible by any number between <br>
+	# 2 and n / 2, it is not prime <br>
+	if (num % i) == 0: <br>
+		print(num, "is not a prime number") <br>
+		break<br>
+else: <br>
+	print(num, "is a prime number") <br><br>
+
+else: <br>
+print(num, "is not a prime number") <br><br>
 				</code>
 			</p>
 			<p>
@@ -787,7 +1535,27 @@
 			</p>
 			<p class="code-area">
 				<code>
-				
+				  # Python program to check if <br>
+# given number is prime or not <br><br>
+
+num = 11<br><br>
+
+# If given number is greater than 1 <br>
+if num > 1: <br><br>
+	
+# Iterate from 2 to n / 2 <br>
+for i in range(2, num//2): <br><br>
+		
+	# If num is divisible by any number between <br>
+	# 2 and n / 2, it is not prime <br>
+	if (num % i) == 0: <br>
+		print(num, "is not a prime number") <br>
+		break<br>
+else: <br>
+	print(num, "is a prime number") <br><br>
+
+else: <br>
+print(num, "is not a prime number") <br><br>
 				</code>
 			</p>
 			<p>
@@ -815,7 +1583,27 @@
 			</p>
 			<p class="code-area">
 				<code>
-				
+				  # Python program to check if <br>
+# given number is prime or not <br><br>
+
+num = 11<br><br>
+
+# If given number is greater than 1 <br>
+if num > 1: <br><br>
+	
+# Iterate from 2 to n / 2 <br>
+for i in range(2, num//2): <br><br>
+		
+	# If num is divisible by any number between <br>
+	# 2 and n / 2, it is not prime <br>
+	if (num % i) == 0: <br>
+		print(num, "is not a prime number") <br>
+		break<br>
+else: <br>
+	print(num, "is a prime number") <br><br>
+
+else: <br>
+print(num, "is not a prime number") <br><br>
 				</code>
 			</p>
 			<p>
@@ -826,7 +1614,27 @@
 			</p>
 			<p class="code-area">
 				<code>
-				
+				  # Python program to check if <br>
+# given number is prime or not <br><br>
+
+num = 11<br><br>
+
+# If given number is greater than 1 <br>
+if num > 1: <br><br>
+	
+# Iterate from 2 to n / 2 <br>
+for i in range(2, num//2): <br><br>
+		
+	# If num is divisible by any number between <br>
+	# 2 and n / 2, it is not prime <br>
+	if (num % i) == 0: <br>
+		print(num, "is not a prime number") <br>
+		break<br>
+else: <br>
+	print(num, "is a prime number") <br><br>
+
+else: <br>
+print(num, "is not a prime number") <br><br>
 				</code>
 			</p>
 			<p>
@@ -837,7 +1645,27 @@
 			</p>
 			<p class="code-area">
 				<code>
-				
+				  # Python program to check if <br>
+# given number is prime or not <br><br>
+
+num = 11<br><br>
+
+# If given number is greater than 1 <br>
+if num > 1: <br><br>
+	
+# Iterate from 2 to n / 2 <br>
+for i in range(2, num//2): <br><br>
+		
+	# If num is divisible by any number between <br>
+	# 2 and n / 2, it is not prime <br>
+	if (num % i) == 0: <br>
+		print(num, "is not a prime number") <br>
+		break<br>
+else: <br>
+	print(num, "is a prime number") <br><br>
+
+else: <br>
+print(num, "is not a prime number") <br><br>
 				</code>
 			</p>
 			<p>
@@ -848,7 +1676,27 @@
 			</p>
 			<p class="code-area">
 				<code>
-				
+				  # Python program to check if <br>
+# given number is prime or not <br><br>
+
+num = 11<br><br>
+
+# If given number is greater than 1 <br>
+if num > 1: <br><br>
+	
+# Iterate from 2 to n / 2 <br>
+for i in range(2, num//2): <br><br>
+		
+	# If num is divisible by any number between <br>
+	# 2 and n / 2, it is not prime <br>
+	if (num % i) == 0: <br>
+		print(num, "is not a prime number") <br>
+		break<br>
+else: <br>
+	print(num, "is a prime number") <br><br>
+
+else: <br>
+print(num, "is not a prime number") <br><br>
 				</code>
 			</p>
 			<p>
